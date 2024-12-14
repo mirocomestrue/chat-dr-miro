@@ -2,12 +2,15 @@ import { FC } from "react"
 import lightLogo from "/public/LIGHT_BRAND_LOGO.png"
 import darkLogo from "/public/DARK_BRAND_LOGO.png"
 
-interface ChatbotUISVGProps {
+interface ChatbotUIImageProps {
   theme: "dark" | "light"
   scale?: number
 }
 
-export const ChatbotUISVG: FC<ChatbotUISVGProps> = ({ theme, scale = 1 }) => {
+export const ChatbotUiImage: FC<ChatbotUIImageProps> = ({
+  theme,
+  scale = 1
+}) => {
   const logoSrc = theme === "dark" ? darkLogo : lightLogo
 
   return (
@@ -20,7 +23,7 @@ export const ChatbotUISVG: FC<ChatbotUISVGProps> = ({ theme, scale = 1 }) => {
   )
 }
 //
-// export const ChatbotUISVG: FC<ChatbotUISVGProps> = ({ theme, scale = 1 }) => {
+// export const ChatbotUISVG: FC<ChatbotUIImageProps> = ({ theme, scale = 1 }) => {
 //   return (
 //     <svg
 //       width={189 * scale}
