@@ -241,7 +241,7 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
           className="ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring text-md flex w-full resize-none rounded-md border-none bg-transparent px-14 py-2 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
           placeholder={t(
             // `Ask anything. Type "@" for assistants, "/" for prompts, "#" for files, and "!" for tools.`
-            `Ask anything. Type @  /  #  !`
+            `미로에게 물어보세요. "/"를 입력하면 프롬프트, "@"를 입력하면 파일, "#"을 입력하면 도구를 사용할 수 있습니다.`
           )}
           onValueChange={handleInputChange}
           value={userInput}

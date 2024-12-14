@@ -27,7 +27,8 @@ yarn-error.log*
 
 # local env files
 .env
-.env*.local
+.env.local
+.env.local.tmp
 
 # vercel
 .vercel
@@ -46,3 +47,5 @@ workbox-*.js
 workbox-*.js.map
 
 .idea
+
+public/tmp
